@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "godot": {
+      "command": "godot-mcp",
+      "args": ["serve"],
+      "env": {
+        "GODOT_MCP_WORKSPACE": "~/godot-projects",
+        "GODOT_MCP_EDITOR_MODE": "headless"
+      }
+    }
+  }
+}

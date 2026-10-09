@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "godot-mcp"
+version = "0.1.0"
+description = "AI Agent용 고수준 Godot MCP 서버 (FastMCP) + CLI"
+requires-python = ">=3.10"
+dependencies = ["fastmcp>=2.0"]
+
+[project.scripts]
+godot-mcp = "godot_mcp.cli:main"
+godot-mcp-server = "godot_mcp.server:main"
+
+[tool.setuptools.packages.find]
+include = ["godot_mcp*"]
